@@ -2,7 +2,7 @@
 """
 Created on Tue Mar  5 10:46:40 2024
 
-MergeonDock - Open-Source Molecular Docking & Analysis Tool  
+# MergeonDock - Open-Source Molecular Docking & Analysis Tool  
 
 Copyright (c) 2024 Xhamrock Studio  
 
@@ -24,7 +24,22 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
 SOFTWARE.  
 
-Technologies used: AutoDock 4.2, AutoDock Vina, RDKit, PyMOL (Open-Source), Open Babel 3.1
+## **Technologies Used**
+MergeonDock integrates the following open-source technologies:
+
+| Software         | Version  | License | Source Link |
+|-----------------|---------|---------|-------------|
+| **AutoDock 4.2** | 4.2     | AutoDock License | [AutoDock Website](http://autodock.scripps.edu/) |
+| **AutoDock Vina** | 1.2.3  | Apache 2.0 | [AutoDock Vina GitHub](https://github.com/ccsb-scripps/AutoDock-Vina) |
+| **RDKit**       | Latest  | BSD | [RDKit Website](https://www.rdkit.org/) |
+| **PyMOL (Open-Source)** | 3.1.0 | GPL | [PyMOL GitHub](https://github.com/schrodinger/pymol-open-source) |
+| **Open Babel**  | 3.1.1   | GPL/LGPL | [Open Babel GitHub](https://github.com/openbabel/openbabel) |
+
+**Note:**  
+- This software includes **GPL-licensed components (PyMOL, Open Babel)**.  
+- MergeonDock **does not modify these components**; they are included as dependencies.  
+- If you distribute this software with modified versions of **PyMOL or Open Babel**, you must provide the corresponding source code, as required by the GPL.  
+
 
 
 @author: Xhamrock Studio
