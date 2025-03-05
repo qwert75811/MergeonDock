@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'about_ui.ui'
+# Form implementation generated from reading ui file 'about_github_ui.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -75,8 +75,8 @@ class Ui_Form_about(object):
 "<li style=\" font-size:16pt;\" style=\" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://openbabel.org/index.html\"><span style=\" text-decoration: underline; color:#0000ff;\">Open Babel 3.1</span></a> - Chemical file format conversion</li></ul>\n"
 "<p style=\" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600;\">📜 License Terms</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">MergeonDock is licensed under the </span><span style=\" font-size:16pt; font-weight:600;\">MIT License</span><span style=\" font-size:16pt;\">, which permits </span><span style=\" font-size:16pt; font-weight:600;\">free use, modification, and redistribution</span><span style=\" font-size:16pt;\"><br />while requiring attribution to the original project.</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                                                             <img src=\":/images/MergeonDock_sample.png\" />                                 <img src=\":/images/Xhamrock_logo_noback.png\" /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                                                                                           </p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt;\"><br /></p></body></html>"))
         self.pushButton.setText(_translate("Form_about", "Close"))
-from MergeonDock import resources_rc  
+
