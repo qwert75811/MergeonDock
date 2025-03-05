@@ -13,7 +13,7 @@ class Parameters_storage:
         if getattr(sys, 'frozen', False):
             self.install_path = os.path.dirname(sys.executable)
                                                        
-            #self.obabel_path = os.path.normpath(os.path.join(self.site_package_path, "openbabel", "bin", "obabel.exe"))
+            
             
             self.autodock4_folder_path = os.path.normpath(os.path.join(self.install_path,"_internal", "autodock4"))
             self.python2_path = os.path.normpath(os.path.join(self.autodock4_folder_path, "python.exe"))
@@ -44,8 +44,7 @@ class Parameters_storage:
             
             self.vina_path = os.path.normpath(os.path.join(self.autodock4_script_path, "vina_1.2.5_win.exe"))
             
-            #self.default_ad4_prepare_receptor_path = os.path.normpath(os.path.join(self.autodoct4_script_path, "default_prepare_receptor.bat"))
-            #self.default_prepare_ligands_path = os.path.normpath(os.path.join(self.autodoct4_script_path, "default_prepare_ligand.bat"))
+            
             
             
             self.python2_path = os.path.normpath(os.path.join(self.site_package_path, "autodock4", "python.exe"))
