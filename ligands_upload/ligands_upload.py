@@ -709,35 +709,7 @@ class Ligands_upload():
     
     
     
-# 程式邏輯流程：
-# 1. 使用者點擊按鈕 (button_upload_ligands)
-#    選擇上傳的分子檔案，然後呼叫 prepare_ligands(ligands_path_list) 來準備處理。
 
-# 2. 建立 TaskWorker 並啟動 QThread
-#    prepare_ligands() 會建立 TaskWorker 物件，並將其移動到 QThread 內運行。
-#    TaskWorker 接受 run_single_ligand_task 作為處理函數，開始依序處理所有任務。
-
-# 3. TaskWorker 執行任務 (run)
-#    TaskWorker 會依序執行 self.task_function(*task_args)，即 run_single_ligand_task。
-#    這個函數會根據檔案類型決定要執行 pdb_to_pdbqt 或 import_convert 來轉換檔案。
-
-# 4. QProcess 啟動外部 AutoDock (pdb_to_pdbqt)
-#    QProcess 非同步執行 AutoDock 轉換指令，並監聽其輸出 (on_process_output)。
-#    任何錯誤或標準輸出都會透過 process_stdoutput_signal & process_error_stdoutput_signal 傳遞回 TaskWorker。
-
-# 5. TaskWorker 接收並記錄輸出
-#    process_stdoutput_signal & process_error_stdoutput_signal 會將輸出累積 (stdoutput_log_collect, error_stdoutput_log_collect)。
-#    當 TaskWorker 執行失敗時，會將對應檔案的 stdout + stderr 記錄到 full_report。
-
-# 6. 任務完成後回報結果
-#    當所有任務執行完畢，TaskWorker 會發送 task_finished_signal，通知 Ligands_upload 載入完成的分子 (load_ligands_to_ui)。
-#    如果有錯誤，則透過 show_error_signal 顯示錯誤訊息 (show_error_message)。
-
-# 訊號傳遞總結：
-# progress_changed → 更新進度條
-# task_finished_signal → 通知 Ligands_upload 載入結果
-# show_error_signal → 通知 Ligands_upload 顯示錯誤訊息
-# process_stdoutput_signal / process_error_stdoutput_signal → 記錄 stdout/stderr 並存入 full_report  
             
         
       
