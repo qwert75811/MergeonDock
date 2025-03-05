@@ -79,9 +79,7 @@ class ProgressWindow(QDialog):
 
     
     
-# quit()： 發送信號要求執行緒的事件循環結束。
-# wait()：  確保執行緒中的任務已經完成，並且執行緒已完全退出。
-# deleteLater()： 將執行緒物件標記為可刪除，釋放與執行緒相關的資源。
+
 
 
 
