@@ -756,18 +756,7 @@ class Receptor_upload():
         
             
  
-#後記
-#主要流程和參數傳遞
-# 1.在 __main__.py 中創建實例：
-#    self.receptor_upload_instance 是 Receptor_upload 類的實例。
-#    self.receptor_detection_instance 是 Receptor_sequence_detection 類的實例，並且將 self.receptor_upload_instance 作為一個參數傳入。
-# 2.在 Receptor_upload 的方法中創建 Receptor_sequence_detection 實例：
-#    當 open_detect_window 方法被調用時，它創建了一個 Receptor_sequence_detection 的實例，並將當前的 Receptor_upload 實例（用 self 表示）作為參數之一傳遞。
-# 3.參數和 self 的含義：
-#    在 Receptor_upload 的 open_detect_window 方法中，self 指的是 Receptor_upload 的當前實例。
-#    在 Receptor_sequence_detection 的 __init__ 方法中，第一個 self 指的是剛被創建的 Receptor_sequence_detection 的實例。
-#    在同一個 __init__ 方法中的參數 receptor_upload_instance 接收的是從 Receptor_upload 傳遞來的 self，也就是一個 Receptor_upload 的實例。    
-        
+
         
         
         
