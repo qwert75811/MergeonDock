@@ -1,7 +1,3 @@
----
-title: MergeonDock - Open-Source Molecular Docking & Analysis Tool
-
----
 
 ![Image](https://github.com/user-attachments/assets/80c3952a-0abe-4cf9-ae61-cb6a24294b10)
 # MergeonDock - Open-Source Molecular Docking & Analysis Tool  
