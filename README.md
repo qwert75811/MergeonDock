@@ -31,11 +31,11 @@ This section provides a step-by-step guide to using MergeonDock.
 
 ### Step 1. Choose your folder
 Each docking run is assigned its own independent folder. Repeating different docking tasks in the same folder may risk overwriting files. You can go back to Step 1 and click 'New Project' to select a new folder.
-![step1](https://hackmd.io/_uploads/rk_Wa58iye.jpg)
+![Image](https://github.com/user-attachments/assets/e1f3f227-5a35-40be-a00e-47f85832a826)
 
 ### Step 2. Upload your Receptor file and Ligands files
 It will automatically prepare your raw files into AutoDock PDBQT files.
-![step2](https://hackmd.io/_uploads/SykMaqLjye.jpg)
+![Image](https://github.com/user-attachments/assets/20bf11d5-e416-45e9-b0f8-7c7e18ade0e6)
 
 #### Step 2-1. Advanced Setting (Optional, for customization)
 This feature is based on AutoDock 4's preparation functions, providing a parameter selection table. Move your cursor over a parameter and hover for a moment to see its original description.
@@ -43,39 +43,39 @@ This feature is based on AutoDock 4's preparation functions, providing a paramet
 This table is designed to simplify parameter configuration. However, if errors or crashes occur after using it, you may need to test the settings directly in AutoDockTools. This feature only calls AutoDock externally.
 
 This step is not mandatory and can be skipped for general use.
-![step2-1](https://hackmd.io/_uploads/SJHrYoLiyl.jpg)
+![Image](https://github.com/user-attachments/assets/3aac441d-010d-4fb9-bbf8-8295ea37ce40)
 
 #### Step 2-2. Receptor detection
 If your receptor file is in .pdb format and comes from the PDB bank or is a pre-processed file, MergeonDock provides a simple heteroatom recognition mechanism for you to choose from. If you find that the uploaded file does not behave as expected or does not trigger this mechanism, you may need to manually perform the preprocessing.
-![step2-2](https://hackmd.io/_uploads/BkOgvs8i1g.jpg)
+![Image](https://github.com/user-attachments/assets/f95b6d14-c889-463d-96ab-30e374007cb9)
 
 
 
 #### Step 2-3. Ligands support
 The current version supports .pdb, .pdbqt, and .sdf files from the database, but preparation may take some time.
-![step2-2](https://hackmd.io/_uploads/BJ2Qa5Lsyx.jpg)
+![Image](https://github.com/user-attachments/assets/daf6ba3b-faef-4c8e-9d50-57fd8de2f098)
 
 ### Step 3. Gridbox Setting
 Adjust your gridbox parameters (save for later return).
-![step3](https://hackmd.io/_uploads/HJBE6qUjye.jpg)
+![Image](https://github.com/user-attachments/assets/b2861d9d-50a1-40ae-b788-342a99bb19cb)
 
 
 ### Step 4. Basic docking parameter setting
 Adjust your docking parameters (save for later return).
-![step4](https://hackmd.io/_uploads/SykSTqLske.jpg)
+![Image](https://github.com/user-attachments/assets/a6ed25d7-7a74-4432-b8ca-23bf4c1a263d)
 
 
 ### Step 5. Start docking
 Press the docking button to start the docking process (this may take some time depending on your CPU).
-![step5](https://hackmd.io/_uploads/r1OH65Ljyg.jpg)
+![Image](https://github.com/user-attachments/assets/ca0aa69d-79fe-41fc-8bfc-07c3a139d065)
 
 
 ### Step 6. Move to the analysis window to view the results
-![step6](https://hackmd.io/_uploads/ByxIa9IsJx.jpg)
+![Image](https://github.com/user-attachments/assets/31638692-f55a-40aa-9655-f56f0d333820)
 
 
 ### Step 7. Interaction analysis
-![step7](https://hackmd.io/_uploads/HyII6qUoJl.jpg)
+![Image](https://github.com/user-attachments/assets/b24773cd-61c6-4e08-b5c5-e19066dcfef9)
 
 
 
