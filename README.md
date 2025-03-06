@@ -37,7 +37,7 @@ MergeonDock integrates the following open-source technologies:
 | Software         | Version  | License | Source Link |
 |-----------------|---------|---------|-------------|
 | **AutoDock 4.2** | 4.2     | AutoDock License | [AutoDock Website](http://autodock.scripps.edu/) |
-| **AutoDock Vina** | 1.2.3  | Apache 2.0 | [AutoDock Vina GitHub](https://github.com/ccsb-scripps/AutoDock-Vina) |
+| **AutoDock Vina** | 1.2.5  | Apache 2.0 | [AutoDock Vina GitHub](https://github.com/ccsb-scripps/AutoDock-Vina) |
 | **RDKit**       | Latest  | BSD | [RDKit Website](https://www.rdkit.org/) |
 | **PyMOL (Open-Source)** | 3.1.0 | GPL | [PyMOL GitHub (official)](https://github.com/schrodinger/pymol-open-source) |
 | **Open Babel**  | 3.1.1   | GPL/LGPL | [Open Babel GitHub (official)](https://github.com/openbabel/openbabel) |
@@ -66,17 +66,11 @@ MergeonDock is developed primarily for **Windows**.
 ### **Linux**
 - **The current codebase is not directly compatible with Linux.**  
 - However, developers can modify it to support Linux.  
-- PyMOL and Open Babel can be installed using official Linux packages:
-  ```bash
-  # Install PyMOL (official)
-  sudo apt install pymol
-
-  # Install Open Babel (official)
-  sudo apt install openbabel
+- PyMOL and Open Babel can be installed using official Linux packages
 
 
 ## **Dependency Handling in MergeonDock**
-1️.API-Based Dependencies (import in Python)
+1️. API-Based Dependencies (import in Python)
  PyMOL & Open Babel: Used via Python API (import pymol / import openbabel) without modification.
 
 2️. External Process Execution (QProcess)
