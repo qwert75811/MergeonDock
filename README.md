@@ -1,4 +1,4 @@
-# MergeonDock - Open-Source Molecular Docking & Analysis Tool  
+rgeonDock - Open-Source Molecular Docking & Analysis Tool  
 
 MergeonDock is an open-source tool for molecular docking and interaction analysis, integrating AutoDock, RDKit, PyMOL, and Open Babel to streamline docking workflows.
 
@@ -94,4 +94,4 @@ MergeonDock does not modify AutoDock. The software simply calls these tools exte
 Final Notes
 MergeonDock is an independent project and is not affiliated with PyMOL, Open Babel, or AutoDock developers.
 This software includes GPL-licensed components (PyMOL, Open Babel).
-All trademarks and software rights belong to their respective owners.
+All trademarks and software rights belong to their respective owners.
