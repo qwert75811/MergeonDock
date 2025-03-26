@@ -1,0 +1,183 @@
+<p><img src="https://github.com/user-attachments/assets/80c3952a-0abe-4cf9-ae61-cb6a24294b10" alt="Image"></p>
+<h1 id="mergeondock-open-source-molecular-docking-analysis-tool">MergeonDock - Open-Source Molecular Docking &amp; Analysis Tool</h1>
+<p>MergeonDock is an open-source tool for molecular docking and interaction analysis, integrating AutoDock, RDKit, PyMOL, and Open Babel to streamline docking workflows.</p>
+<h2 id="-features-"><strong>Features</strong></h2>
+<ul>
+<li><strong>Graphical User Interface (GUI):</strong> Provides an intuitive interface for docking workflow visualization.</li>
+<li><strong>AutoDock Vina Integration:</strong> Uses AutoDock Vina 1.2.5 as the core docking engine.</li>
+<li><strong>Receptor &amp; Ligand Processing:</strong> Automatically prepares <code>.pdb</code> files for docking.</li>
+<li><strong>Advanced Settings:</strong> Customize receptor and ligand preparation settings based on AutoDock 4.2 options.</li>
+<li><strong>Mini Open Babel Converter</strong>: A built-in tool for converting molecular file formats between .mol, .pdb, and .pdbqt using Open Babel, seamlessly integrated into the GUI.</li>
+<li><strong>Interaction Analysis:</strong> Allows users to analyze docking results with reference ligands.</li>
+<li><strong>Multi-Format Support:</strong> Supports <code>.pdb</code>, <code>.pdbqt</code>, and <code>.sdf</code> file formats.</li>
+</ul>
+<h2 id="-installation-"><strong>Installation</strong></h2>
+<p><strong>Download and install from my release (Windows OS only).</strong><br>Linux is currently not supported. For details, please refer to the Platform Compatibility section below.</p>
+<hr>
+<h2 id="-development-status-"><strong>Development Status</strong></h2>
+<ul>
+<li>This is an early-stage release, and many features are only placeholders without actual functionality. It is normal to encounter issues while using it.</li>
+<li>As I am not a professional software developer, maintaining this project requires significant effort, and there are also potential infringement risks. While future updates are unlikely, they are not impossible. My main goal is education and promotion, which is why I have decided to make all information and code publicly available, allowing those who are interested to explore and expand upon it freely.</li>
+</ul>
+<h2 id="quick-user-guide">Quick User Guide</h2>
+<p>This section provides a step-by-step guide to using MergeonDock.</p>
+<h3 id="step-1-choose-your-folder">Step 1. Choose your folder</h3>
+<p>Each docking run is assigned its own independent folder. Repeating different docking tasks in the same folder may risk overwriting files. You can go back to Step 1 and click &#39;New Project&#39; to select a new folder.
+<img src="https://github.com/user-attachments/assets/e1f3f227-5a35-40be-a00e-47f85832a826" alt="Image"></p>
+<h3 id="step-2-upload-your-receptor-file-and-ligands-files">Step 2. Upload your Receptor file and Ligands files</h3>
+<p>It will automatically prepare your raw files into AutoDock PDBQT files.
+<img src="https://github.com/user-attachments/assets/20bf11d5-e416-45e9-b0f8-7c7e18ade0e6" alt="Image"></p>
+<h4 id="step-2-1-advanced-setting-optional-for-customization-">Step 2-1. Advanced Setting (Optional, for customization)</h4>
+<p>This feature is based on AutoDock 4&#39;s preparation functions, providing a parameter selection table. Move your cursor over a parameter and hover for a moment to see its original description.</p>
+<p>This table is designed to simplify parameter configuration. However, if errors or crashes occur after using it, you may need to test the settings directly in AutoDockTools. This feature only calls AutoDock externally.</p>
+<p>This step is not mandatory and can be skipped for general use.
+<img src="https://github.com/user-attachments/assets/3aac441d-010d-4fb9-bbf8-8295ea37ce40" alt="Image"></p>
+<h4 id="step-2-2-receptor-detection">Step 2-2. Receptor detection</h4>
+<p>If your receptor file is in .pdb format and comes from the PDB bank or is a pre-processed file, MergeonDock provides a simple heteroatom recognition mechanism for you to choose from. If you find that the uploaded file does not behave as expected or does not trigger this mechanism, you may need to manually perform the preprocessing.
+<img src="https://github.com/user-attachments/assets/f95b6d14-c889-463d-96ab-30e374007cb9" alt="Image"></p>
+<h4 id="step-2-3-ligands-support">Step 2-3. Ligands support</h4>
+<p>The current version supports .pdb, .pdbqt, and .sdf files from the database, but preparation may take some time.
+<img src="https://github.com/user-attachments/assets/daf6ba3b-faef-4c8e-9d50-57fd8de2f098" alt="Image"></p>
+<h3 id="step-3-gridbox-setting">Step 3. Gridbox Setting</h3>
+<p>Adjust your gridbox parameters (save for later return).
+<img src="https://github.com/user-attachments/assets/b2861d9d-50a1-40ae-b788-342a99bb19cb" alt="Image"></p>
+<h3 id="step-4-basic-docking-parameter-setting">Step 4. Basic docking parameter setting</h3>
+<p>Adjust your docking parameters (save for later return).
+<img src="https://github.com/user-attachments/assets/a6ed25d7-7a74-4432-b8ca-23bf4c1a263d" alt="Image"></p>
+<h3 id="step-5-start-docking">Step 5. Start docking</h3>
+<p>Press the docking button to start the docking process (this may take some time depending on your CPU).
+<img src="https://github.com/user-attachments/assets/ca0aa69d-79fe-41fc-8bfc-07c3a139d065" alt="Image"></p>
+<h3 id="step-6-move-to-the-analysis-window-to-view-the-results">Step 6. Move to the analysis window to view the results</h3>
+<p><img src="https://github.com/user-attachments/assets/31638692-f55a-40aa-9655-f56f0d333820" alt="Image"></p>
+<h3 id="step-7-interaction-analysis">Step 7. Interaction analysis</h3>
+<p><img src="https://github.com/user-attachments/assets/b24773cd-61c6-4e08-b5c5-e19066dcfef9" alt="Image"></p>
+<hr>
+<h2 id="-technologies-used-"><strong>Technologies Used</strong></h2>
+<p>MergeonDock integrates the following open-source technologies:</p>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Version</th>
+<th>License</th>
+<th>Source Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AutoDock 4.2</strong></td>
+<td>4.2</td>
+<td>AutoDock License</td>
+<td><a href="http://autodock.scripps.edu/">AutoDock Website</a></td>
+</tr>
+<tr>
+<td><strong>AutoDock Vina</strong></td>
+<td>1.2.5</td>
+<td>Apache 2.0</td>
+<td><a href="https://github.com/ccsb-scripps/AutoDock-Vina">AutoDock Vina GitHub</a></td>
+</tr>
+<tr>
+<td><strong>RDKit</strong></td>
+<td>Latest</td>
+<td>BSD</td>
+<td><a href="https://www.rdkit.org/">RDKit Website</a></td>
+</tr>
+<tr>
+<td><strong>PyMOL (Open-Source)</strong></td>
+<td>3.1.0</td>
+<td>GPL</td>
+<td><a href="https://github.com/schrodinger/pymol-open-source">PyMOL GitHub (official)</a></td>
+</tr>
+<tr>
+<td><strong>Open Babel</strong></td>
+<td>3.1.1</td>
+<td>GPL/LGPL</td>
+<td><a href="https://github.com/openbabel/openbabel">Open Babel GitHub (official)</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="-windows-specific-third-party-wheels-"><strong>Windows-Specific Third-Party Wheels</strong></h3>
+<p>Since PyMOL and Open Babel do not officially provide Python Wheels for Windows, we use third-party compiled binaries:</p>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Windows Wheel Source</th>
+<th>Maintainer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PyMOL (Windows Wheel)</strong></td>
+<td><a href="https://github.com/cgohlke/pymol-open-source-wheels">cgohlke/pymol-open-source-wheels</a></td>
+<td>Third-Party</td>
+</tr>
+<tr>
+<td><strong>Open Babel (Windows Wheel)</strong></td>
+<td><a href="https://github.com/njzjz/openbabel-wheel">njzjz/openbabel-wheel</a></td>
+<td>Third-Party</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong>  </p>
+<ul>
+<li>These Windows wheels are <strong>not officially maintained</strong> by PyMOL or Open Babel developers.  </li>
+<li>MergeonDock <strong>does not modify these components</strong>; they are included as dependencies.  </li>
+</ul>
+<h2 id="-dependency-handling-in-mergeondock-"><strong>Dependency Handling in MergeonDock</strong></h2>
+<h3 id="-1-api-based-dependencies-import-in-python-"><strong>1️⃣ API-Based Dependencies (<code>import</code> in Python)</strong></h3>
+<p>✅ <strong>PyMOL</strong> &amp; <strong>Open Babel</strong>:  </p>
+<ul>
+<li>Used via Python API (<code>import pymol</code> / <code>import openbabel</code>) without modification.  </li>
+<li>These dependencies are installed via Python Wheels.</li>
+</ul>
+<h3 id="-2-external-process-execution-qprocess-"><strong>2️⃣ External Process Execution (QProcess)</strong></h3>
+<p>✅ <strong>AutoDock Vina</strong>:  </p>
+<ul>
+<li>The <code>vina.exe</code> binary is <strong>included in the project</strong>.  </li>
+<li>MergeonDock calls it <strong>externally using QProcess</strong>, with command-line arguments provided by the software.  </li>
+</ul>
+<p>✅ <strong>AutoDock 4.2</strong>:  </p>
+<ul>
+<li>AutoDock 4.2 is a <strong>Python 2-based tool</strong>, which <strong>cannot run directly in Python 3</strong>.  </li>
+<li>To resolve this, MergeonDock <strong>includes a minimal custom Python 2 environment</strong>, containing only the required <code>autodocktools</code> components.  </li>
+<li>MergeonDock calls this environment <strong>externally via QProcess</strong> to execute docking commands.</li>
+</ul>
+<p>These binaries are sourced from:</p>
+<ul>
+<li><strong>AutoDock 4.2</strong>: <a href="http://autodock.scripps.edu/">AutoDock Official Website</a></li>
+<li><strong>AutoDock Vina</strong>: <a href="https://github.com/ccsb-scripps/AutoDock-Vina">AutoDock Vina GitHub</a></li>
+</ul>
+<h2 id="-platform-compatibility-"><strong>Platform Compatibility</strong></h2>
+<p>MergeonDock is developed primarily for <strong>Windows</strong>.</p>
+<h3 id="-windows-"><strong>Windows</strong></h3>
+<ul>
+<li>Fully supported. The installer includes all necessary dependencies.</li>
+</ul>
+<h3 id="-linux-"><strong>Linux</strong></h3>
+<p>⚠ <strong>Linux compatibility is currently untested.</strong><br>MergeonDock is designed for Windows, and running it on Linux may require significant modifications.<br>Potential issues include:</p>
+<ul>
+<li><strong>AutoDock Vina &amp; AutoDock 4.2 execution</strong> (command differences &amp; Python 2 environment)</li>
+<li><strong>PyQt5 GUI behavior</strong> (file dialogs, QProcess handling)</li>
+<li><strong>PyMOL &amp; Open Babel dependencies</strong> (must use official Linux versions)</li>
+</ul>
+<p>Developers interested in porting MergeonDock to Linux may need to manually adjust these components.</p>
+<h2 id="-license-"><strong>License</strong></h2>
+<p>MergeonDock is released under the <strong>MIT License</strong>.</p>
+<p>MIT License</p>
+<p>Copyright (c) 2024 Xhamrock Studio</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
